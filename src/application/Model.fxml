@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="801.0" prefWidth="790.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.Controller">
+  <!-- TODO Add Nodes -->
+  <children>
+    <AnchorPane layoutX="0.0" layoutY="0.0" prefHeight="801.0" prefWidth="790.0">
+      <children>
+        <Button fx:id="myButton" layoutX="57.0" layoutY="170.0" mnemonicParsing="false" onAction="#createBlockChain" text="Create Blockchain" />
+        <Button fx:id="createCoinBase" onAction="#createCoinBase" layoutX="616.0" layoutY="234.0" mnemonicParsing="false" text="Create Coinbase" />
+        <Button fx:id="genesisBlock" layoutX="58.0" layoutY="234.0" mnemonicParsing="false" onAction="#genesisBlock" text="Create Genesis Block" />
+        <Button fx:id="newBlock" layoutX="57.0" layoutY="299.0" mnemonicParsing="false" onAction="#newBlock" text="Create new Block" />
+        <Button layoutX="663.0" layoutY="170.0" mnemonicParsing="false" text="DB Login" />
+        <Label layoutX="183.0" layoutY="59.0" prefHeight="50.000099999997474" prefWidth="392.0" text="Dracula Coin BlockChain" textAlignment="CENTER" wrapText="false">
+          <effect>
+            <DropShadow>
+              <input>
+                <Glow />
+              </input>
+            </DropShadow>
+          </effect>
+          <font>
+            <Font size="30.0" fx:id="x1" />
+          </font>
+        </Label>
+        <TextField fx:id="myTextField" layoutX="222.0" layoutY="326.0" prefHeight="461.0" prefWidth="547.0" />
+        <Label font="$x1" layoutX="89.0" layoutY="584.0" prefHeight="51.0" text="Status:" />
+        <Button fx:id="checkValidity" layoutX="58.0" layoutY="428.0" mnemonicParsing="false" onAction="#checkValidity" text="Check Validity" />
+        <Button fx:id="displayJson" onAction="#displayJson" layoutX="57.0" layoutY="365.0" mnemonicParsing="false" text="Display Blockchain" />
+      </children>
+    </AnchorPane>
+  </children>
+</AnchorPane>
